@@ -13,10 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
   obt <- function() x
   detinverse <- function(inverse) i <<- inverse
   obtinverse <- function() i
-  list(det = det,
-       obt = obt,
-       detinverse = detinverse,
-       obtinverse = obtinverse)
+  list(det = det, obt = obt, detinverse = detinverse, obtinverse = obtinverse)
 }
 
 
@@ -45,6 +42,18 @@ cacheSolve <- function(x, ...) {
 a <- matrix(c(2,3,4,5),2,2)
 A1 <- makeCacheMatrix(a)
 cacheSolve(A1)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
